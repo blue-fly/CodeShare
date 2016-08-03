@@ -5,6 +5,10 @@ target 'CodeShare' do
 
 pod 'AFNetworking'
 
+
+# AutoLayout
+pod 'Masonry'
+
 # Mob产品公共库
 pod 'MOBFoundation_IDFA'
 # SMSSDK必须

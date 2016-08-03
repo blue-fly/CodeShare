@@ -14,19 +14,22 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Masonry (1.0.1)
   - MOBFoundation_IDFA (2.0.7)
   - SMSSDK (2.0.5)
 
 DEPENDENCIES:
   - AFNetworking
+  - Masonry
   - MOBFoundation_IDFA
   - SMSSDK
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MOBFoundation_IDFA: 965c0c4ae890a9732eb3e0261e26b078df9f7c63
   SMSSDK: 85375419fc969dc9398ce9922c5165c1e14ebe23
 
-PODFILE CHECKSUM: c516ddeb583d1d5ecf7162ad7f046336f11a33c0
+PODFILE CHECKSUM: eacbcaa42addde01a5e558a13c7b84ac8e9f4702
 
 COCOAPODS: 1.1.0.beta.1
