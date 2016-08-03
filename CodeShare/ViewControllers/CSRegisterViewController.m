@@ -76,7 +76,6 @@
         make.left.right.equalTo(@0);
         make.top.equalTo(password.mas_bottom).offset(16);
         make.height.equalTo(@64);
-        
     }];
     
     UIImageView *phoneLeftImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"用户图标"]];
