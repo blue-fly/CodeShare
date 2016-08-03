@@ -68,6 +68,7 @@
                                  
                                  ];
     
+    //虽然是可变数组，但依旧可以先初始化大小
     NSMutableArray *viewControllers = [NSMutableArray arrayWithCapacity:controllerInfos.count];
     //数组的枚举遍历方法
     [controllerInfos enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {

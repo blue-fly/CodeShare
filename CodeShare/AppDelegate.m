@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "CSViewController.h"
+#import <SMS_SDK/SMSSDK.h>
+
 @interface AppDelegate ()
 
 @end
@@ -23,7 +25,8 @@
     [self setUpRootViewController];
     
     
-    
+    //Mob 初始化
+    [self setUpMob];
     
     return YES;
 }
@@ -36,6 +39,10 @@
     [self.window makeKeyAndVisible];
 }
 
+
+- (void)setUpMob {
+    [SMSSDK registerApp:MobApp withSecret:MobSecret];
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

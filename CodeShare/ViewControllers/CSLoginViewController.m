@@ -12,6 +12,11 @@
 //这里封装了一个方法，可以通过一个颜色，生成一张图片
 #import "UIImage+Color.h"
 #import "UIButton+BackgroundColor.h"
+#import "UIControl+ActionBlocks.h"
+
+
+#import "CSForgetViewController.h"
+#import "CSRegisterViewController.h"
 
 @interface CSLoginViewController ()
 
@@ -78,6 +83,9 @@
     UIView *passLeft = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 64, 64)];
     [phoneLeft addSubview:phoneLeftImage];
     [passLeft addSubview:passLeftImage];
+    
+    //在使用Masonry时，需要addSubview让其拥有父视图
+    
     [phoneLeftImage mas_makeConstraints:^(MASConstraintMaker *make) {
        //让视图居中
         make.center.equalTo(@0);
@@ -161,6 +169,35 @@
     //让登陆按钮的宽度和左边距保持跟父控件相对位置不变
     loginButton.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin;
     
+    
+    //两个跳转界面
+    [forgetPass setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    
+    //设置按钮的动作，跳转到另外一个控制器
+//    [forgetPass addTarget:self action:@selector(gotoForget) forControlEvents:UIControlEventTouchUpInside];
+    
+    //我们还可以将按钮的事件与按钮写到一块
+    
+    [forgetPass handleControlEvents:UIControlEventTouchUpInside withBlock:^(id weakSender) {
+        
+        //把按钮的事件回调写到block里，便于我们在写界面的时候，方便的加入控制事件
+        
+        CSForgetViewController *forgetVC =[[CSForgetViewController alloc] init];
+        
+        [self.navigationController pushViewController:forgetVC animated:YES];
+        
+    }];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:UIBarButtonItemStylePlain target:self action:@selector(gotoRegister)];
+    
+    
+}
+
+- (void)gotoRegister {
+    
+    CSRegisterViewController *registerVC =[[CSRegisterViewController alloc] init];
+    
+    [self.navigationController pushViewController:registerVC animated:YES];
     
 }
 

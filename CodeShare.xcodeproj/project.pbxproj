@@ -76,6 +76,9 @@
 		075F70F31D519E3C008880A7 /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F70AD1D519E3C008880A7 /* UIViewController+MJPopupViewController.m */; };
 		075F70F41D519E3C008880A7 /* NSMutableString+TagReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F70B01D519E3C008880A7 /* NSMutableString+TagReplace.m */; };
 		075F70F51D519E3C008880A7 /* NSString+WPAttributedMarkup.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F70B21D519E3C008880A7 /* NSString+WPAttributedMarkup.m */; };
+		075F70F81D51C15C008880A7 /* CSForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F70F71D51C15C008880A7 /* CSForgetViewController.m */; };
+		075F70FB1D51C3C5008880A7 /* CSRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F70FA1D51C3C5008880A7 /* CSRegisterViewController.m */; };
+		075F71011D51EA3F008880A7 /* QFCodeShareInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F70FF1D51EA3F008880A7 /* QFCodeShareInit.m */; };
 		07D3FD721D50831F001EF799 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3FD711D50831F001EF799 /* main.m */; };
 		07D3FD751D50831F001EF799 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3FD741D50831F001EF799 /* AppDelegate.m */; };
 		07D3FD781D50831F001EF799 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3FD771D50831F001EF799 /* ViewController.m */; };
@@ -225,6 +228,15 @@
 		075F70B01D519E3C008880A7 /* NSMutableString+TagReplace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+TagReplace.m"; sourceTree = "<group>"; };
 		075F70B11D519E3C008880A7 /* NSString+WPAttributedMarkup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WPAttributedMarkup.h"; sourceTree = "<group>"; };
 		075F70B21D519E3C008880A7 /* NSString+WPAttributedMarkup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WPAttributedMarkup.m"; sourceTree = "<group>"; };
+		075F70F61D51C15C008880A7 /* CSForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSForgetViewController.h; sourceTree = "<group>"; };
+		075F70F71D51C15C008880A7 /* CSForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSForgetViewController.m; sourceTree = "<group>"; };
+		075F70F91D51C3C5008880A7 /* CSRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRegisterViewController.h; sourceTree = "<group>"; };
+		075F70FA1D51C3C5008880A7 /* CSRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRegisterViewController.m; sourceTree = "<group>"; };
+		075F70FD1D51EA3F008880A7 /* LxDBAnything.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LxDBAnything.h; sourceTree = "<group>"; };
+		075F70FE1D51EA3F008880A7 /* QFCodeShareInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFCodeShareInit.h; sourceTree = "<group>"; };
+		075F70FF1D51EA3F008880A7 /* QFCodeShareInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFCodeShareInit.m; sourceTree = "<group>"; };
+		075F71001D51EA3F008880A7 /* QFCommonSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFCommonSetting.h; sourceTree = "<group>"; };
+		075F71021D51EAC9008880A7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		07D3FD6D1D50831E001EF799 /* CodeShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D3FD711D50831F001EF799 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07D3FD731D50831F001EF799 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -536,6 +548,17 @@
 			path = WPAttributedMarkup;
 			sourceTree = "<group>";
 		};
+		075F70FC1D51EA3F008880A7 /* CommonSetting */ = {
+			isa = PBXGroup;
+			children = (
+				075F70FD1D51EA3F008880A7 /* LxDBAnything.h */,
+				075F70FE1D51EA3F008880A7 /* QFCodeShareInit.h */,
+				075F70FF1D51EA3F008880A7 /* QFCodeShareInit.m */,
+				075F71001D51EA3F008880A7 /* QFCommonSetting.h */,
+			);
+			path = CommonSetting;
+			sourceTree = "<group>";
+		};
 		07D3FD641D50831E001EF799 = {
 			isa = PBXGroup;
 			children = (
@@ -557,6 +580,7 @@
 		07D3FD6F1D50831E001EF799 /* CodeShare */ = {
 			isa = PBXGroup;
 			children = (
+				075F70FC1D51EA3F008880A7 /* CommonSetting */,
 				075F701A1D519E3B008880A7 /* Addition */,
 				071096641D51870C00DE6919 /* Model */,
 				07EC45EE1D50865600DD4BC2 /* ViewControllers */,
@@ -571,6 +595,7 @@
 				07D3FD7E1D50831F001EF799 /* LaunchScreen.storyboard */,
 				07D3FD811D50831F001EF799 /* Info.plist */,
 				07D3FD701D50831E001EF799 /* Supporting Files */,
+				075F71021D51EAC9008880A7 /* PrefixHeader.pch */,
 			);
 			path = CodeShare;
 			sourceTree = "<group>";
@@ -608,6 +633,10 @@
 				071096621D51860400DE6919 /* MainViewController.m */,
 				071096681D51889C00DE6919 /* CSLoginViewController.h */,
 				071096691D51889C00DE6919 /* CSLoginViewController.m */,
+				075F70F61D51C15C008880A7 /* CSForgetViewController.h */,
+				075F70F71D51C15C008880A7 /* CSForgetViewController.m */,
+				075F70F91D51C3C5008880A7 /* CSRegisterViewController.h */,
+				075F70FA1D51C3C5008880A7 /* CSRegisterViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -757,11 +786,13 @@
 				075F70D11D519E3C008880A7 /* UIImage+Blur.m in Sources */,
 				075F70BA1D519E3C008880A7 /* NSDictionary+URL.m in Sources */,
 				070EEB5D1D517F9D0022833E /* CSViewController.m in Sources */,
+				075F70F81D51C15C008880A7 /* CSForgetViewController.m in Sources */,
 				075F70F31D519E3C008880A7 /* UIViewController+MJPopupViewController.m in Sources */,
 				075F70B91D519E3C008880A7 /* NSDictionary+SafeAccess.m in Sources */,
 				075F70D91D519E3C008880A7 /* UIImage+Tint.m in Sources */,
 				075F70CA1D519E3C008880A7 /* UIApplication+ApplicationSize.m in Sources */,
 				075F70C51D519E3C008880A7 /* NSString+Trims.m in Sources */,
+				075F71011D51EA3F008880A7 /* QFCodeShareInit.m in Sources */,
 				075F70D41D519E3C008880A7 /* UIImage+Color.m in Sources */,
 				071096671D51873B00DE6919 /* CSUserModel.m in Sources */,
 				075F70D51D519E3C008880A7 /* UIImage+FileName.m in Sources */,
@@ -796,6 +827,7 @@
 				07D3FD781D50831F001EF799 /* ViewController.m in Sources */,
 				075F70C41D519E3C008880A7 /* NSString+Size.m in Sources */,
 				075F70ED1D519E3C008880A7 /* UIView+Shadow.m in Sources */,
+				075F70FB1D51C3C5008880A7 /* CSRegisterViewController.m in Sources */,
 				075F70EA1D519E3C008880A7 /* UIView+draggable.m in Sources */,
 				075F70C81D519E3C008880A7 /* NSTimer+Blocks.m in Sources */,
 				075F70E61D519E3C008880A7 /* UITableViewCell+Config.m in Sources */,
@@ -937,10 +969,12 @@
 			baseConfigurationReference = FE669DB3818AF5C0C2174EFB /* Pods-CodeShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeShare/PrefixHeader.pch";
 				INFOPLIST_FILE = CodeShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ddz.CodeShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
 			name = Debug;
 		};
@@ -949,10 +983,12 @@
 			baseConfigurationReference = A02A282754BDA524195185F3 /* Pods-CodeShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeShare/PrefixHeader.pch";
 				INFOPLIST_FILE = CodeShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ddz.CodeShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
 			name = Release;
 		};
