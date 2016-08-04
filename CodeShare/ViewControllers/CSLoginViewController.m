@@ -18,6 +18,11 @@
 #import "CSForgetViewController.h"
 #import "CSRegisterViewController.h"
 
+#import "UIAlertView+Block.h"
+#import "NSString+MD5.h"
+
+#import "CSUserModel.h"
+
 @interface CSLoginViewController ()
 
 @end
@@ -191,7 +196,70 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:UIBarButtonItemStylePlain target:self action:@selector(gotoRegister)];
     
     
+    [phonetext handleControlEvents:UIControlEventEditingChanged withBlock:^(id weakSender) {
+       
+        if (phonetext.text.length >= 11) {
+            [password becomeFirstResponder];
+            
+            if (phonetext.text.length > 11) {
+                phonetext.text = [phonetext.text substringFromIndex:11];
+            }
+            
+        }
+    }];
+    
+    
+    RAC(loginButton,enabled) = [RACSignal combineLatest:@[phonetext.rac_textSignal,password.rac_textSignal] reduce:^(NSString *phone,NSString *pass){
+        
+        return @(phone.length >= 11 &&pass.length >= 6);
+        
+    }];
+    
+    
+    //登录
+    [loginButton handleControlEvents:UIControlEventTouchUpInside withBlock:^(id weakSender) {
+       
+        
+        NSDictionary *params = @{
+                                 @"service": @"User.Login",
+                                 @"phone": phonetext.text,
+                                 @"password": [password.text md532BitUpper]
+                                 };
+        
+        [NetworkTool getDataWithParameters:params completeBlock:^(BOOL success, id result) {
+            
+            if (success) {
+                NSLog(@"%@",result);
+                
+                CSUserModel *user = [CSUserModel sharedUser];
+//                [user setValuesForKeysWithDictionary:result];
+                // YYModel
+                [user yy_modelSetWithDictionary:result];
+                
+                
+                
+                [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+            }else {
+                
+                [UIAlertView alertWithCallBackBlock:nil title:@"温馨提示" message:result cancelButtonName:@"确定" otherButtonTitles:nil];
+                
+            }
+            
+            
+        }];
+        
+    }];
+    
+    
 }
+
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    [self.view endEditing:YES];
+}
+
 
 - (void)gotoRegister {
     

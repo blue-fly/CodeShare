@@ -322,7 +322,7 @@
             if (success) {
                 [self.navigationController popViewControllerAnimated:YES];
             }else {
-                [UIAlertView alertWithCallBackBlock:nil title:@"温馨提示" message:result cancelButtonName:@"确定" otherButtonTitles:nil, nil];
+                [UIAlertView alertWithCallBackBlock:nil title:@"温馨提示" message:result cancelButtonName:@"确定" otherButtonTitles:nil];
                 
             }
             

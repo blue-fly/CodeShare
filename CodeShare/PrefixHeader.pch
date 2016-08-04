@@ -17,5 +17,7 @@
 #import "QFCodeShareInit.h"
 #import "QFCommonSetting.h"
 #import "NetworkTool.h"
+#import "ReactiveCocoa.h"
+#import "YYModel.h"
 
 #endif /* PrefixHeader_pch */
