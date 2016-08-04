@@ -972,7 +972,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeShare/PrefixHeader.pch";
 				INFOPLIST_FILE = CodeShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ddz.CodeShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.1000phone.CodeShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
@@ -986,7 +986,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeShare/PrefixHeader.pch";
 				INFOPLIST_FILE = CodeShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ddz.CodeShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.1000phone.CodeShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};

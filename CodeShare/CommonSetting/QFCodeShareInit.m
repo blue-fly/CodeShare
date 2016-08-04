@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #ifdef DEBUG
-const NSString* const QFAppBaseURL = @"http://192.168.1.37/PhalApi/Public/CodeShare/";
+const NSString* const QFAppBaseURL = @"http://10.30.152.134/PhalApi/Public/CodeShare/";
 #else
 const NSString* const QFAppBaseURL = @"http://www.1000phone.ml/";
 #endif

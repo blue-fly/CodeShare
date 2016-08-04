@@ -33,7 +33,7 @@ static NSString *baseUrl = @"https://www.1000phone.tk";
     static AFHTTPSessionManager *manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:baseUrl]];
+        manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:QFAppBaseURL]];
         
         //设置请求的超时时间
         manager.requestSerializer.timeoutInterval  = 5;
