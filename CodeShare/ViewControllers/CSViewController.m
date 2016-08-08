@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "CSUserModel.h"
 #import "CSLoginViewController.h"
+#import "CSMyViewController.h"
 
 @interface CSViewController ()
 
@@ -25,8 +26,37 @@
     [self setUpViewControllers];
     
    
+    //设置界面显示样式
+    [self setUpAppearance];
+    
+    //在这里监听通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logOff) name:WLogOffSuccess object:nil];
     
 }
+
+- (void)logOff {
+    
+    //1.先将控制器退到根控制器
+    [((UINavigationController *)[self selectedViewController])popToRootViewControllerAnimated:YES];
+//    [self setSelectedIndex:0];
+    //2.弹出登录界面
+    [self showLoginViewController];
+    
+}
+
+
+- (void)setUpAppearance {
+    UITabBar *appearance = [UITabBar appearance];
+    
+//    [appearance setBarTintColor:[UIColor greenColor]];
+    //(前景颜色)d视图上条目的颜色
+    [appearance setTintColor:[UIColor redColor]];
+
+    //光标颜色
+    [[UITextField appearance] setTintColor:[UIColor colorWithRed:1.000 green:0.257 blue:0.889 alpha:1.000]];
+    
+}
+
 
 - (void)showLoginViewController {
     
@@ -48,22 +78,22 @@
                                  @{
                                      @"class":[MainViewController class],
                                      @"title":@"首页",
-                                     @"icon":@"tabbar1",
+                                     @"icon":@"按钮主页",
                                      },
                                  @{
                                      @"class":[UIViewController class],
                                      @"title":@"首页",
-                                     @"icon":@"tabbar2",
+                                     @"icon":@"按钮消息",
                                      },
                                  @{
                                      @"class":[UIViewController class],
                                      @"title":@"首页",
-                                     @"icon":@"tabbar3",
+                                     @"icon":@"按钮分享",
                                      },
                                  @{
-                                     @"class":[UIViewController class],
-                                     @"title":@"首页",
-                                     @"icon":@"tabbar4",
+                                     @"class":[CSMyViewController class],
+                                     @"title":@"我的",
+                                     @"icon":@"按钮我的",
                                      },
                                  
                                  ];
@@ -77,6 +107,7 @@
         UIViewController *viewController = [[[obj objectForKey:@"class"] alloc] init];
         
         viewController.title = [obj objectForKey:@"title"];
+        viewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:[obj objectForKey:@"title"] image:[UIImage imageNamed:[obj objectForKey:@"icon"]] tag:0];
         //再创建一个导航控制器，装入刚才创建的控制器。
         UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:viewController];
         

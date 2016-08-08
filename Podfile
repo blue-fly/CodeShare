@@ -19,4 +19,6 @@ pod 'ReactiveCocoa','~> 2.0'
 
 
 pod 'YYModel'
+pod 'YYImage'
+pod 'YYWebImage'
 end

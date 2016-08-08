@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07024DBE1D54316000B12E8C /* CSMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07024DBD1D54316000B12E8C /* CSMyViewController.m */; };
+		07024DC11D546A6300B12E8C /* CSSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07024DC01D546A6300B12E8C /* CSSettingViewController.m */; };
+		07024DC41D5473D300B12E8C /* CSInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07024DC31D5473D300B12E8C /* CSInfoViewController.m */; };
+		07024DC71D54910E00B12E8C /* CSEditNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07024DC61D54910E00B12E8C /* CSEditNameViewController.m */; };
 		070EEB5D1D517F9D0022833E /* CSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070EEB5C1D517F9D0022833E /* CSViewController.m */; };
 		071096631D51860400DE6919 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071096621D51860400DE6919 /* MainViewController.m */; };
 		071096671D51873B00DE6919 /* CSUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 071096661D51873B00DE6919 /* CSUserModel.m */; };
@@ -79,6 +83,10 @@
 		075F70F81D51C15C008880A7 /* CSForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F70F71D51C15C008880A7 /* CSForgetViewController.m */; };
 		075F70FB1D51C3C5008880A7 /* CSRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F70FA1D51C3C5008880A7 /* CSRegisterViewController.m */; };
 		075F71011D51EA3F008880A7 /* QFCodeShareInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F70FF1D51EA3F008880A7 /* QFCodeShareInit.m */; };
+		07AC39651D5826CE001E6589 /* CSAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AC39641D5826CE001E6589 /* CSAboutViewController.m */; };
+		07AC39691D586D46001E6589 /* CSSuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AC39671D586D46001E6589 /* CSSuggestionViewController.m */; };
+		07AC396A1D586D46001E6589 /* CSSuggestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07AC39681D586D46001E6589 /* CSSuggestionViewController.xib */; };
+		07AC396D1D5881A0001E6589 /* CSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AC396C1D5881A0001E6589 /* CSImageViewController.m */; };
 		07D3FD721D50831F001EF799 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3FD711D50831F001EF799 /* main.m */; };
 		07D3FD751D50831F001EF799 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3FD741D50831F001EF799 /* AppDelegate.m */; };
 		07D3FD781D50831F001EF799 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3FD771D50831F001EF799 /* ViewController.m */; };
@@ -90,6 +98,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07024DBC1D54316000B12E8C /* CSMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSMyViewController.h; sourceTree = "<group>"; };
+		07024DBD1D54316000B12E8C /* CSMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSMyViewController.m; sourceTree = "<group>"; };
+		07024DBF1D546A6300B12E8C /* CSSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSettingViewController.h; sourceTree = "<group>"; };
+		07024DC01D546A6300B12E8C /* CSSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSettingViewController.m; sourceTree = "<group>"; };
+		07024DC21D5473D300B12E8C /* CSInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSInfoViewController.h; sourceTree = "<group>"; };
+		07024DC31D5473D300B12E8C /* CSInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSInfoViewController.m; sourceTree = "<group>"; };
+		07024DC51D54910E00B12E8C /* CSEditNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSEditNameViewController.h; sourceTree = "<group>"; };
+		07024DC61D54910E00B12E8C /* CSEditNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSEditNameViewController.m; sourceTree = "<group>"; };
 		070EEB5B1D517F9D0022833E /* CSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSViewController.h; sourceTree = "<group>"; };
 		070EEB5C1D517F9D0022833E /* CSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSViewController.m; sourceTree = "<group>"; };
 		071096611D51860400DE6919 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -237,6 +253,13 @@
 		075F70FF1D51EA3F008880A7 /* QFCodeShareInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFCodeShareInit.m; sourceTree = "<group>"; };
 		075F71001D51EA3F008880A7 /* QFCommonSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFCommonSetting.h; sourceTree = "<group>"; };
 		075F71021D51EAC9008880A7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		07AC39631D5826CE001E6589 /* CSAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAboutViewController.h; sourceTree = "<group>"; };
+		07AC39641D5826CE001E6589 /* CSAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAboutViewController.m; sourceTree = "<group>"; };
+		07AC39661D586D46001E6589 /* CSSuggestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSuggestionViewController.h; sourceTree = "<group>"; };
+		07AC39671D586D46001E6589 /* CSSuggestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSuggestionViewController.m; sourceTree = "<group>"; };
+		07AC39681D586D46001E6589 /* CSSuggestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSSuggestionViewController.xib; sourceTree = "<group>"; };
+		07AC396B1D5881A0001E6589 /* CSImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSImageViewController.h; sourceTree = "<group>"; };
+		07AC396C1D5881A0001E6589 /* CSImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSImageViewController.m; sourceTree = "<group>"; };
 		07D3FD6D1D50831E001EF799 /* CodeShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D3FD711D50831F001EF799 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07D3FD731D50831F001EF799 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -637,6 +660,21 @@
 				075F70F71D51C15C008880A7 /* CSForgetViewController.m */,
 				075F70F91D51C3C5008880A7 /* CSRegisterViewController.h */,
 				075F70FA1D51C3C5008880A7 /* CSRegisterViewController.m */,
+				07024DBC1D54316000B12E8C /* CSMyViewController.h */,
+				07024DBD1D54316000B12E8C /* CSMyViewController.m */,
+				07024DBF1D546A6300B12E8C /* CSSettingViewController.h */,
+				07024DC01D546A6300B12E8C /* CSSettingViewController.m */,
+				07024DC21D5473D300B12E8C /* CSInfoViewController.h */,
+				07024DC31D5473D300B12E8C /* CSInfoViewController.m */,
+				07024DC51D54910E00B12E8C /* CSEditNameViewController.h */,
+				07024DC61D54910E00B12E8C /* CSEditNameViewController.m */,
+				07AC39631D5826CE001E6589 /* CSAboutViewController.h */,
+				07AC39641D5826CE001E6589 /* CSAboutViewController.m */,
+				07AC39661D586D46001E6589 /* CSSuggestionViewController.h */,
+				07AC39671D586D46001E6589 /* CSSuggestionViewController.m */,
+				07AC39681D586D46001E6589 /* CSSuggestionViewController.xib */,
+				07AC396B1D5881A0001E6589 /* CSImageViewController.h */,
+				07AC396C1D5881A0001E6589 /* CSImageViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -718,6 +756,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07AC396A1D586D46001E6589 /* CSSuggestionViewController.xib in Resources */,
 				07D3FD801D50831F001EF799 /* LaunchScreen.storyboard in Resources */,
 				07D3FD7D1D50831F001EF799 /* Assets.xcassets in Resources */,
 				07D3FD7B1D50831F001EF799 /* Main.storyboard in Resources */,
@@ -808,8 +847,10 @@
 				075F70DA1D519E3C008880A7 /* UIImageView+Addition.m in Sources */,
 				071096631D51860400DE6919 /* MainViewController.m in Sources */,
 				075F70EE1D519E3C008880A7 /* UIView+Shake.m in Sources */,
+				07024DBE1D54316000B12E8C /* CSMyViewController.m in Sources */,
 				075F70E41D519E3C008880A7 /* UINavigationItem+Margin.m in Sources */,
 				075F70CC1D519E3C008880A7 /* UIButton+BackgroundColor.m in Sources */,
+				07AC39651D5826CE001E6589 /* CSAboutViewController.m in Sources */,
 				075F70E71D519E3C008880A7 /* UIView+Animation.m in Sources */,
 				075F70CE1D519E3C008880A7 /* UIButton+TouchAreaInsets.m in Sources */,
 				075F70BB1D519E3C008880A7 /* NSObject+AppInfo.m in Sources */,
@@ -817,6 +858,7 @@
 				075F70D01D519E3C008880A7 /* UIImage+Alpha.m in Sources */,
 				07EC45F11D50953500DD4BC2 /* NetworkTool.m in Sources */,
 				075F70E01D519E3C008880A7 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				07AC39691D586D46001E6589 /* CSSuggestionViewController.m in Sources */,
 				075F70BE1D519E3C008880A7 /* NSObject+KVOBlocks.m in Sources */,
 				075F70CF1D519E3C008880A7 /* UIControl+ActionBlocks.m in Sources */,
 				075F70D31D519E3C008880A7 /* UIImage+Capture.m in Sources */,
@@ -843,10 +885,14 @@
 				075F70B41D519E3C008880A7 /* NSDate+Helper.m in Sources */,
 				075F70F41D519E3C008880A7 /* NSMutableString+TagReplace.m in Sources */,
 				075F70C11D519E3C008880A7 /* NSString+JsonValue.m in Sources */,
+				07024DC71D54910E00B12E8C /* CSEditNameViewController.m in Sources */,
 				075F70C21D519E3C008880A7 /* NSString+MD5.m in Sources */,
 				075F70C31D519E3C008880A7 /* NSString+RegexCategory.m in Sources */,
+				07AC396D1D5881A0001E6589 /* CSImageViewController.m in Sources */,
 				075F70BF1D519E3C008880A7 /* NSObject+Property.m in Sources */,
 				075F70E31D519E3C008880A7 /* UINavigationItem+Lock.m in Sources */,
+				07024DC11D546A6300B12E8C /* CSSettingViewController.m in Sources */,
+				07024DC41D5473D300B12E8C /* CSInfoViewController.m in Sources */,
 				075F70BC1D519E3C008880A7 /* NSObject+AutoCoding.m in Sources */,
 				075F70F01D519E3C008880A7 /* UIView+Visuals.m in Sources */,
 				07D3FD751D50831F001EF799 /* AppDelegate.m in Sources */,
@@ -971,6 +1017,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeShare/PrefixHeader.pch";
 				INFOPLIST_FILE = CodeShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.1000phone.CodeShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -985,6 +1032,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeShare/PrefixHeader.pch";
 				INFOPLIST_FILE = CodeShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.1000phone.CodeShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";

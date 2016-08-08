@@ -194,7 +194,7 @@
     phoneText.keyboardType = UIKeyboardTypeNumberPad;
     
     
-    //ReactiveCocoa 处理
+    //ReactiveCocoa 处理，
     //ReactiveCocoa 可以代替 delegate\target action\通知\kvo\...一系列iOS开发里面的数据传递方式
     //RAC 使用的是信号流的方式来处理我们的数据，无论是按钮点击事件还是输入框事件还是网络数据获取...都可以被当做"信号"
     //我们可以观测某个信号的改变，来做相应的操作

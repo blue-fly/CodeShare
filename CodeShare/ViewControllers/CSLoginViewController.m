@@ -231,11 +231,12 @@
             if (success) {
                 NSLog(@"%@",result);
                 
-                CSUserModel *user = [CSUserModel sharedUser];
+//                CSUserModel *user = [CSUserModel sharedUser];
 //                [user setValuesForKeysWithDictionary:result];
                 // YYModel
-                [user yy_modelSetWithDictionary:result];
+//                [user yy_modelSetWithDictionary:result];
                 
+                [CSUserModel loginWithInfo:result];
                 
                 
                 [self.navigationController dismissViewControllerAnimated:YES completion:nil];

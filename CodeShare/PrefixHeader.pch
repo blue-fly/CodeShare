@@ -19,5 +19,5 @@
 #import "NetworkTool.h"
 #import "ReactiveCocoa.h"
 #import "YYModel.h"
-
+#import "CSUserModel.h"
 #endif /* PrefixHeader_pch */

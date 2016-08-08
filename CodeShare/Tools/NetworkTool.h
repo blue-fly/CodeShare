@@ -30,5 +30,8 @@
 
 + (void)getDataWithParameters:(NSDictionary *)parameters completeBlock:(void (^)(BOOL success, id result))complete;
 
+//上传图片
++ (void)uploadImageData:(NSData *)imageData andParameters:(NSDictionary *)parameters completeBlock:(void (^)(BOOL success,id result))complete;
+
 
 @end
