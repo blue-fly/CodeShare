@@ -10,6 +10,8 @@
 #import "CSInfoViewController.h"
 #import "CSAboutViewController.h"
 #import "CSSuggestionViewController.h"
+#import "CSTriangleViewController.h"
+#import "CSLayerPathViewController.h"
 
 static NSString *settingCellID = @"settingCellID";
 
@@ -72,6 +74,16 @@ static NSString *settingCellID = @"settingCellID";
                          @{
                              @"title": @"账号绑定",
                              @"subTitle": @"QQ：1234566",
+                             @"cellType": @"arrow",
+                             },
+                         @{
+                             @"title": @"Core Graphics",
+                             @"subTitle": @"Demo",
+                             @"cellType": @"arrow",
+                             },
+                         @{
+                             @"title": @"Layer Path",
+                             @"subTitle": @"Demo",
                              @"cellType": @"arrow",
                              },
                          ],
@@ -192,6 +204,17 @@ static NSString *settingCellID = @"settingCellID";
         CSSuggestionViewController *suggestVC = [[CSSuggestionViewController alloc] init];
         
         [self.navigationController pushViewController:suggestVC animated:YES];
+        
+    }else if(indexPath.section == 2 && indexPath.row == 2) {
+        
+        CSTriangleViewController *triangleVC = [[CSTriangleViewController alloc] init];
+        [self.navigationController pushViewController:triangleVC animated:YES];
+        
+    }else if(indexPath.section == 2 && indexPath.row == 3) {
+        
+        CSLayerPathViewController *layerVC = [[CSLayerPathViewController alloc] init];
+        
+        [self.navigationController pushViewController:layerVC animated:YES];
         
     }
     

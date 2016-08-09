@@ -15,6 +15,12 @@
 		071096631D51860400DE6919 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071096621D51860400DE6919 /* MainViewController.m */; };
 		071096671D51873B00DE6919 /* CSUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 071096661D51873B00DE6919 /* CSUserModel.m */; };
 		0710966A1D51889C00DE6919 /* CSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071096691D51889C00DE6919 /* CSLoginViewController.m */; };
+		0750C6FB1D596617009B2748 /* CSTriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0750C6FA1D596617009B2748 /* CSTriangleViewController.m */; };
+		0750C7021D596739009B2748 /* CSTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0750C7011D596739009B2748 /* CSTriangleView.m */; };
+		0750C7051D597ADC009B2748 /* CSDrawableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0750C7041D597ADC009B2748 /* CSDrawableView.m */; };
+		0750C7081D59B2A2009B2748 /* CSLayerPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0750C7071D59B2A2009B2748 /* CSLayerPathViewController.m */; };
+		0750C70B1D59B350009B2748 /* CSCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0750C70A1D59B350009B2748 /* CSCircleView.m */; };
+		0750C70E1D59BC0D009B2748 /* CSClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0750C70D1D59BC0D009B2748 /* CSClockView.m */; };
 		075F70B31D519E3C008880A7 /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F701D1D519E3B008880A7 /* NSDate+Formatter.m */; };
 		075F70B41D519E3C008880A7 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F701F1D519E3B008880A7 /* NSDate+Helper.m */; };
 		075F70B51D519E3C008880A7 /* NSDate+Reporting.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F70211D519E3B008880A7 /* NSDate+Reporting.m */; };
@@ -114,6 +120,18 @@
 		071096661D51873B00DE6919 /* CSUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSUserModel.m; sourceTree = "<group>"; };
 		071096681D51889C00DE6919 /* CSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLoginViewController.h; sourceTree = "<group>"; };
 		071096691D51889C00DE6919 /* CSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLoginViewController.m; sourceTree = "<group>"; };
+		0750C6F91D596617009B2748 /* CSTriangleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTriangleViewController.h; sourceTree = "<group>"; };
+		0750C6FA1D596617009B2748 /* CSTriangleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTriangleViewController.m; sourceTree = "<group>"; };
+		0750C7001D596739009B2748 /* CSTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTriangleView.h; sourceTree = "<group>"; };
+		0750C7011D596739009B2748 /* CSTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTriangleView.m; sourceTree = "<group>"; };
+		0750C7031D597ADC009B2748 /* CSDrawableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDrawableView.h; sourceTree = "<group>"; };
+		0750C7041D597ADC009B2748 /* CSDrawableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDrawableView.m; sourceTree = "<group>"; };
+		0750C7061D59B2A2009B2748 /* CSLayerPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLayerPathViewController.h; sourceTree = "<group>"; };
+		0750C7071D59B2A2009B2748 /* CSLayerPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLayerPathViewController.m; sourceTree = "<group>"; };
+		0750C7091D59B350009B2748 /* CSCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCircleView.h; sourceTree = "<group>"; };
+		0750C70A1D59B350009B2748 /* CSCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCircleView.m; sourceTree = "<group>"; };
+		0750C70C1D59BC0D009B2748 /* CSClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSClockView.h; sourceTree = "<group>"; };
+		0750C70D1D59BC0D009B2748 /* CSClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSClockView.m; sourceTree = "<group>"; };
 		075F701C1D519E3B008880A7 /* NSDate+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
 		075F701D1D519E3B008880A7 /* NSDate+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
 		075F701E1D519E3B008880A7 /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
@@ -296,6 +314,21 @@
 				071096661D51873B00DE6919 /* CSUserModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0750C6FC1D5966FE009B2748 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0750C7001D596739009B2748 /* CSTriangleView.h */,
+				0750C7011D596739009B2748 /* CSTriangleView.m */,
+				0750C7031D597ADC009B2748 /* CSDrawableView.h */,
+				0750C7041D597ADC009B2748 /* CSDrawableView.m */,
+				0750C7091D59B350009B2748 /* CSCircleView.h */,
+				0750C70A1D59B350009B2748 /* CSCircleView.m */,
+				0750C70C1D59BC0D009B2748 /* CSClockView.h */,
+				0750C70D1D59BC0D009B2748 /* CSClockView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		075F701A1D519E3B008880A7 /* Addition */ = {
@@ -603,6 +636,7 @@
 		07D3FD6F1D50831E001EF799 /* CodeShare */ = {
 			isa = PBXGroup;
 			children = (
+				0750C6FC1D5966FE009B2748 /* Views */,
 				075F70FC1D51EA3F008880A7 /* CommonSetting */,
 				075F701A1D519E3B008880A7 /* Addition */,
 				071096641D51870C00DE6919 /* Model */,
@@ -675,6 +709,10 @@
 				07AC39681D586D46001E6589 /* CSSuggestionViewController.xib */,
 				07AC396B1D5881A0001E6589 /* CSImageViewController.h */,
 				07AC396C1D5881A0001E6589 /* CSImageViewController.m */,
+				0750C6F91D596617009B2748 /* CSTriangleViewController.h */,
+				0750C6FA1D596617009B2748 /* CSTriangleViewController.m */,
+				0750C7061D59B2A2009B2748 /* CSLayerPathViewController.h */,
+				0750C7071D59B2A2009B2748 /* CSLayerPathViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -826,6 +864,7 @@
 				075F70BA1D519E3C008880A7 /* NSDictionary+URL.m in Sources */,
 				070EEB5D1D517F9D0022833E /* CSViewController.m in Sources */,
 				075F70F81D51C15C008880A7 /* CSForgetViewController.m in Sources */,
+				0750C6FB1D596617009B2748 /* CSTriangleViewController.m in Sources */,
 				075F70F31D519E3C008880A7 /* UIViewController+MJPopupViewController.m in Sources */,
 				075F70B91D519E3C008880A7 /* NSDictionary+SafeAccess.m in Sources */,
 				075F70D91D519E3C008880A7 /* UIImage+Tint.m in Sources */,
@@ -836,6 +875,7 @@
 				071096671D51873B00DE6919 /* CSUserModel.m in Sources */,
 				075F70D51D519E3C008880A7 /* UIImage+FileName.m in Sources */,
 				075F70DD1D519E3C008880A7 /* UIImageView+Letters.m in Sources */,
+				0750C7081D59B2A2009B2748 /* CSLayerPathViewController.m in Sources */,
 				075F70C61D519E3C008880A7 /* NSString+UrlEncode.m in Sources */,
 				075F70F11D519E3C008880A7 /* UIViewController+BackButtonHandler.m in Sources */,
 				075F70D61D519E3C008880A7 /* UIImage+FX.m in Sources */,
@@ -862,14 +902,17 @@
 				075F70BE1D519E3C008880A7 /* NSObject+KVOBlocks.m in Sources */,
 				075F70CF1D519E3C008880A7 /* UIControl+ActionBlocks.m in Sources */,
 				075F70D31D519E3C008880A7 /* UIImage+Capture.m in Sources */,
+				0750C7021D596739009B2748 /* CSTriangleView.m in Sources */,
 				075F70EB1D519E3C008880A7 /* UIView+GestureCallback.m in Sources */,
 				075F70D81D519E3C008880A7 /* UIImage+RoundedCorner.m in Sources */,
 				075F70C71D519E3C008880A7 /* NSTimer+Addition.m in Sources */,
 				075F70EF1D519E3C008880A7 /* UIView+ViewController.m in Sources */,
 				07D3FD781D50831F001EF799 /* ViewController.m in Sources */,
+				0750C70E1D59BC0D009B2748 /* CSClockView.m in Sources */,
 				075F70C41D519E3C008880A7 /* NSString+Size.m in Sources */,
 				075F70ED1D519E3C008880A7 /* UIView+Shadow.m in Sources */,
 				075F70FB1D51C3C5008880A7 /* CSRegisterViewController.m in Sources */,
+				0750C7051D597ADC009B2748 /* CSDrawableView.m in Sources */,
 				075F70EA1D519E3C008880A7 /* UIView+draggable.m in Sources */,
 				075F70C81D519E3C008880A7 /* NSTimer+Blocks.m in Sources */,
 				075F70E61D519E3C008880A7 /* UITableViewCell+Config.m in Sources */,
@@ -882,6 +925,7 @@
 				075F70E21D519E3C008880A7 /* UINavigationItem+Loading.m in Sources */,
 				075F70B61D519E3C008880A7 /* NSDate+Utilities.m in Sources */,
 				075F70CD1D519E3C008880A7 /* UIButton+Submitting.m in Sources */,
+				0750C70B1D59B350009B2748 /* CSCircleView.m in Sources */,
 				075F70B41D519E3C008880A7 /* NSDate+Helper.m in Sources */,
 				075F70F41D519E3C008880A7 /* NSMutableString+TagReplace.m in Sources */,
 				075F70C11D519E3C008880A7 /* NSString+JsonValue.m in Sources */,
