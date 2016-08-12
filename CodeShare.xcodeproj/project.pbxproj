@@ -89,6 +89,8 @@
 		075F70F81D51C15C008880A7 /* CSForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F70F71D51C15C008880A7 /* CSForgetViewController.m */; };
 		075F70FB1D51C3C5008880A7 /* CSRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F70FA1D51C3C5008880A7 /* CSRegisterViewController.m */; };
 		075F71011D51EA3F008880A7 /* QFCodeShareInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F70FF1D51EA3F008880A7 /* QFCodeShareInit.m */; };
+		07A753EB1D5C0DF600BAFC05 /* CSQRCodeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07A753EA1D5C0DF600BAFC05 /* CSQRCodeViewController.mm */; };
+		07A753EE1D5C553400BAFC05 /* CSScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A753ED1D5C553400BAFC05 /* CSScanViewController.m */; };
 		07AC39651D5826CE001E6589 /* CSAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AC39641D5826CE001E6589 /* CSAboutViewController.m */; };
 		07AC39691D586D46001E6589 /* CSSuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AC39671D586D46001E6589 /* CSSuggestionViewController.m */; };
 		07AC396A1D586D46001E6589 /* CSSuggestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07AC39681D586D46001E6589 /* CSSuggestionViewController.xib */; };
@@ -271,6 +273,10 @@
 		075F70FF1D51EA3F008880A7 /* QFCodeShareInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFCodeShareInit.m; sourceTree = "<group>"; };
 		075F71001D51EA3F008880A7 /* QFCommonSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFCommonSetting.h; sourceTree = "<group>"; };
 		075F71021D51EAC9008880A7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		07A753E91D5C0DF600BAFC05 /* CSQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSQRCodeViewController.h; sourceTree = "<group>"; };
+		07A753EA1D5C0DF600BAFC05 /* CSQRCodeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CSQRCodeViewController.mm; sourceTree = "<group>"; };
+		07A753EC1D5C553400BAFC05 /* CSScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSScanViewController.h; sourceTree = "<group>"; };
+		07A753ED1D5C553400BAFC05 /* CSScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSScanViewController.m; sourceTree = "<group>"; };
 		07AC39631D5826CE001E6589 /* CSAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAboutViewController.h; sourceTree = "<group>"; };
 		07AC39641D5826CE001E6589 /* CSAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAboutViewController.m; sourceTree = "<group>"; };
 		07AC39661D586D46001E6589 /* CSSuggestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSuggestionViewController.h; sourceTree = "<group>"; };
@@ -713,6 +719,10 @@
 				0750C6FA1D596617009B2748 /* CSTriangleViewController.m */,
 				0750C7061D59B2A2009B2748 /* CSLayerPathViewController.h */,
 				0750C7071D59B2A2009B2748 /* CSLayerPathViewController.m */,
+				07A753E91D5C0DF600BAFC05 /* CSQRCodeViewController.h */,
+				07A753EA1D5C0DF600BAFC05 /* CSQRCodeViewController.mm */,
+				07A753EC1D5C553400BAFC05 /* CSScanViewController.h */,
+				07A753ED1D5C553400BAFC05 /* CSScanViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -923,6 +933,7 @@
 				075F70E91D519E3C008880A7 /* UIView+Borders.m in Sources */,
 				075F70D21D519E3C008880A7 /* UIImage+CalculatedSize.m in Sources */,
 				075F70E21D519E3C008880A7 /* UINavigationItem+Loading.m in Sources */,
+				07A753EE1D5C553400BAFC05 /* CSScanViewController.m in Sources */,
 				075F70B61D519E3C008880A7 /* NSDate+Utilities.m in Sources */,
 				075F70CD1D519E3C008880A7 /* UIButton+Submitting.m in Sources */,
 				0750C70B1D59B350009B2748 /* CSCircleView.m in Sources */,
@@ -942,6 +953,7 @@
 				07D3FD751D50831F001EF799 /* AppDelegate.m in Sources */,
 				07D3FD721D50831F001EF799 /* main.m in Sources */,
 				075F70B31D519E3C008880A7 /* NSDate+Formatter.m in Sources */,
+				07A753EB1D5C0DF600BAFC05 /* CSQRCodeViewController.mm in Sources */,
 				075F70EC1D519E3C008880A7 /* UIView+Screenshot.m in Sources */,
 				075F70E11D519E3C008880A7 /* UINavigationController+JZExtension.m in Sources */,
 				075F70F21D519E3C008880A7 /* UIViewController+BackButtonItemTitle.m in Sources */,

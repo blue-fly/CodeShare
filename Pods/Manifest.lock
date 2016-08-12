@@ -16,6 +16,8 @@ PODS:
     - AFNetworking/NSURLSession
   - Masonry (1.0.1)
   - MOBFoundation_IDFA (2.0.7)
+  - OpenShare (0.0.1)
+  - QR-Code-Encoder-for-Objective-C (1.0.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -37,6 +39,8 @@ DEPENDENCIES:
   - AFNetworking
   - Masonry
   - MOBFoundation_IDFA
+  - OpenShare
+  - QR-Code-Encoder-for-Objective-C
   - ReactiveCocoa (~> 2.0)
   - SMSSDK
   - YYImage
@@ -47,6 +51,8 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MOBFoundation_IDFA: 965c0c4ae890a9732eb3e0261e26b078df9f7c63
+  OpenShare: a560580dbb729d5c0c3cc1ee84cd6aa4a07e94c6
+  QR-Code-Encoder-for-Objective-C: 031dda11bf457a73dd5dea9165d934d628bcaf2d
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SMSSDK: 85375419fc969dc9398ce9922c5165c1e14ebe23
   YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
@@ -54,6 +60,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYWebImage: 0431ed108e104527669b86f75efd58958425cca2
 
-PODFILE CHECKSUM: 4cc64136f844cb52fc2240e89d13835775461576
+PODFILE CHECKSUM: 760032082f3d582c56e412ac237469e18d681757
 
 COCOAPODS: 1.1.0.beta.1

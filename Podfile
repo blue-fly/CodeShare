@@ -21,4 +21,8 @@ pod 'ReactiveCocoa','~> 2.0'
 pod 'YYModel'
 pod 'YYImage'
 pod 'YYWebImage'
+
+pod 'OpenShare'
+
+pod 'QR-Code-Encoder-for-Objective-C'
 end

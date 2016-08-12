@@ -12,6 +12,8 @@
 #import "UIControl+ActionBlocks.h"
 #import "UIImageView+YYWebImage.h"
 #import "CSImageViewController.h"
+#import "CSQRCodeViewController.h"
+#import "CSScanViewController.h"
 
 static NSString *infoCellID = @"infoCellID";
 
@@ -93,6 +95,14 @@ static NSString *infoCellID = @"infoCellID";
                      @{
                          @"title": @"所在地",
                          @"class": [UIViewController class],
+                         },
+                     @{
+                         @"title": @"我的二维码",
+                         @"class": [CSQRCodeViewController class],
+                         },
+                     @{
+                         @"title": @"扫一扫",
+                         @"class": [CSScanViewController class],
                          }
                      ];
 }

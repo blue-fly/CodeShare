@@ -14,7 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>OpenShare.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-CodeShare.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>QR-Code-Encoder-for-Objective-C.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,7 +57,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0686A355A31695330C7C2B18C58F8495</key>
+		<key>05C8B9073E37E25AF45E15DB5F7FA714</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1885391565CF3C350277D99E72316E0C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,7 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>89F90D2D30582E87D0A5F4B4610D5C97</key>
+		<key>5D53DEDE580BA39A1908EC4957894689</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>80384FCDC4C84F7FAED7C4F08A8C0EBD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8A455D3C7205029E5D0420D88773E8DA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,22 +92,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9CA46E15101F1A3FA82048A03CD451BD</key>
+		<key>A3D1AC04B063DD0AFD0E694C381F60D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ADFCA5B74B682A49E6AB3FD9C5F2CBE2</key>
+		<key>C8F9645BCBE2A6B3E9F202D2C64A3577</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C4CEAE1A4768698D7279DFCA190B7A1B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F125586C6A9D47EB6A23DDD3F1E85FEA</key>
+		<key>D79C5D02C5B82672F3342670170FC25C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

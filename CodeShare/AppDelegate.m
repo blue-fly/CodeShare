@@ -10,6 +10,8 @@
 #import "CSViewController.h"
 #import <SMS_SDK/SMSSDK.h>
 
+#import <openshareHeader.h>
+
 @interface AppDelegate ()<UIAlertViewDelegate>
 
 @end
@@ -40,7 +42,34 @@
     [self setUpShortKeys];
     
     
+    
+    //我们做分享
+    //1.去各大平台的开发者后台申请我们的app分享功能
+    //2.在我们自己的项目里，info.plist配置URL Types(配置这个东西，是为了让这些第三方应用认识我们) schemes(这个东西是为了在iOS9上系统允许我们去调用哪些第三方应用)
+    //3.在APPDelegate中,应用启动时，连接这些app
+    
+    [self setUpOpenShare];
+    
+    //4.需要我们在appDelegate中处理分享完成的回调
+    
+    //5.当点击分享的时候，调用相应的分享
+    
     return YES;
+}
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
+    
+    return [OpenShare handleOpenURL:url];
+    
+}
+
+
+- (void)setUpOpenShare {
+    
+    [OpenShare connectQQWithAppId:@"1103194207"];
+    [OpenShare connectWeiboWithAppKey:@"402180334"];
+    [OpenShare connectWeixinWithAppId:@"wxd930ea5d5a258f4f"];
+    [OpenShare connectRenrenWithAppId:@"228525" AndAppKey:@"1dd8cba4215d4d4ab96a49d3058c1d7f"];
+    
 }
 
 
