@@ -20,4 +20,17 @@
 #import "ReactiveCocoa.h"
 #import "YYModel.h"
 #import "CSUserModel.h"
+
+
+//对于我们开发者来说，有几个苹果的网站非常重要
+//1.membercenter 会员中心，我们在这里创建app，不然无法上架，创建证书，不然无法真机测试，无法打包，在这里配置一些描述文件
+
+//2.ituns connect 我们在这里上架我们的应用，并且设置上架的一些信息
+
+//3.apple develop 这里是
+
+
+
+
+
 #endif /* PrefixHeader_pch */

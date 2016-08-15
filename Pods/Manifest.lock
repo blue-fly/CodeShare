@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - JPush (2.1.8)
   - Masonry (1.0.1)
   - MOBFoundation_IDFA (2.0.7)
   - OpenShare (0.0.1)
@@ -37,6 +38,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - JPush
   - Masonry
   - MOBFoundation_IDFA
   - OpenShare
@@ -49,6 +51,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  JPush: 2d1286494eae216433f6d7709b2721565b4babc9
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MOBFoundation_IDFA: 965c0c4ae890a9732eb3e0261e26b078df9f7c63
   OpenShare: a560580dbb729d5c0c3cc1ee84cd6aa4a07e94c6
@@ -60,6 +63,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYWebImage: 0431ed108e104527669b86f75efd58958425cca2
 
-PODFILE CHECKSUM: 760032082f3d582c56e412ac237469e18d681757
+PODFILE CHECKSUM: 3fbd0a8922cfa91dd4f9cf468ad4a1119040bdd2
 
 COCOAPODS: 1.1.0.beta.1

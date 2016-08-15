@@ -25,4 +25,6 @@ pod 'YYWebImage'
 pod 'OpenShare'
 
 pod 'QR-Code-Encoder-for-Objective-C'
+
+pod 'JPush'
 end

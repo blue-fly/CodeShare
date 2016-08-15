@@ -8,6 +8,7 @@
 
 #import "CSUserModel.h"
 
+#import "JPushService.h"
 
 //存储用户信息的key
 static NSString *userInfoKey = @"UserInfoKey";
@@ -69,6 +70,11 @@ static NSString *userStatusKey = @"UserStatusKey";
     //3.将用户的登录状态和信息存储到本地
     [self saveUserInfo:userInfo];
     
+    //如果登录成功，设置极光推送的别名
+    [JPUSHService setTags:nil alias:((CSUserModel *)[self sharedUser]).phone fetchCompletionHandle:^(int iResCode, NSSet *iTags, NSString *iAlias) {
+       
+        NSLog(@"%d,%@,%@",iResCode,iTags,iAlias);
+    }];
 }
 
 
@@ -95,8 +101,19 @@ static NSString *userStatusKey = @"UserStatusKey";
     //3.删除本地存储的用户信息
     [self saveUserInfo:nil];
     
+    //当退出登录，将极光推送的别名设置为空
+    [JPUSHService setTags:nil alias:@"" fetchCompletionHandle:^(int iResCode, NSSet *iTags, NSString *iAlias) {
+
+        NSLog(@"%d,%@,%@",iResCode,iTags,iAlias);
+    }];
+    
 }
 
+
+//如果用户买了一件商品，那么卖家发货肯定要通知买家，我们可以指定推送给这个用户，我们需要给指定的用户发送推送
+//极光推送给我们提供了可以通过别名和标签给指定的用户发送推送
+//别名一个手机只能设置一个，标签可以设置很多个，如果置空代表删除别名或标签
+//所以我们一般都是在用户登录成功时，给本机的别名设置为用户的用户，标签按照需求来设置，在用户退出登录时候，可以将别名去除
 
 
 //KVC

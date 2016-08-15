@@ -29,4 +29,7 @@ OBJC_EXTERN NSString *const MobSecret;
 extern NSString *const WRegisterSuccess;
 extern NSString *const WLogInSuccess;
 extern NSString *const WLogOffSuccess;
+
+
+extern NSString *const WJpushKey;
 #endif /* QFCodeShareInit_h */

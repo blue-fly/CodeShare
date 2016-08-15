@@ -34,7 +34,7 @@ const NSString *const WUMengAppKey = @"567fa270e0f55ae3be00200e";
 
 const NSString *const WAppStoreID = @"";
 
-const NSString *const WJpushKey = @"";
+const NSString *const WJpushKey = @"8f4dfc37ba0d04b30ff3569c";
 
 const NSString *const WEaseMobAppKey = @"";
 const NSString *const WEaseMobClientID = @"";

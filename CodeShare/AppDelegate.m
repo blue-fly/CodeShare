@@ -12,6 +12,8 @@
 
 #import <openshareHeader.h>
 
+#import <JPUSHService.h>
+
 @interface AppDelegate ()<UIAlertViewDelegate>
 
 @end
@@ -54,8 +56,57 @@
     
     //5.当点击分享的时候，调用相应的分享
     
+    
+    
+    //封装一个极光推送的设置方法
+    [self setUpJpush:launchOptions];
+    
+    
+    //在打开app的时候将角标和通知栏的通知清除
+    [application setApplicationIconBadgeNumber:0];
+    
+    
     return YES;
 }
+
+
+
+//集成远程推送的步骤
+//1.在apple 会员中心，登录开发账号，创建开发证书，app ID，给app创建推送证书
+//2.将极光推送的SDK集成，
+//3.在极光推送的后台创建应用并上传推送证书，获取appKey
+
+- (void)setUpJpush:(NSDictionary *)launchOptions {
+    
+    //appkey 在极光推送后台创建完应用
+    //channel
+    //apsForProduction 是否是生产环境
+    [JPUSHService setupWithOption:launchOptions appKey:WJpushKey channel:@"iOS" apsForProduction:NO];
+    
+    //申请发送推送的权限
+    [JPUSHService registerForRemoteNotificationTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
+
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
+    //当我们去申请远程推送的权限时候，如果用户同意，iOS系统会给我们的当前手机的当前app生成一个独一无二的deviceToken，我们需要这个东西来发送通知
+    
+    [JPUSHService registerDeviceToken:deviceToken];
+    
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    
+    //当应用在前台运行时，收到推送会调用这个回调方法，在这里做处理
+    
+    NSLog(@"%@",userInfo);
+    [JPUSHService handleRemoteNotification:userInfo];
+    completionHandler(UIBackgroundFetchResultNewData);
+}
+
+
+
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
     
     return [OpenShare handleOpenURL:url];
